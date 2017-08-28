@@ -15,3 +15,6 @@
 	majiang：麻将后台源文件
 	mode_modules：node.js所用到的框架
 	majiang.bat：批处理文件，用于启动服务器
+
+后续：
+下一个项目  昆特牌
