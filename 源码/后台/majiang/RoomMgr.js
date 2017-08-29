@@ -838,7 +838,10 @@ module.exports.createRoomByPwd = function (alpha) {
 module.exports.joinRoom = function (beta,roomNumber,pwd) {
     if (allRoom[roomNumber] != 'undefined') {
         let room = allRoom[roomNumber];
-        if (room.beta == null) {
+        if (typeof (room) == 'undefined') {
+            return 4;
+        }
+        if (typeof (room.beta) == 'undefined' || room.beta == null) {
             if (room.pwd == pwd) {
                 room.beta = beta;
                 room.wait();
