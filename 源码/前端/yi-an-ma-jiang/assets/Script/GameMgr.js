@@ -26,6 +26,10 @@ cc.Class({
         readyButton:cc.Node,
         leaveButton:cc.Node,
         gameEnd:GameEnd,
+        audioSource: {
+         	type: cc.AudioSource,
+         	default: null
+     	},
 
         _inRoom:false,
         _who:'',

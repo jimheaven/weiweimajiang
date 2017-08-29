@@ -5,7 +5,7 @@ if(window.io == null){
 var Global = cc.Class({
     extends: cc.Component,
     statics: {
-        ip:'jimheaven.xicp.io:34402',//"127.0.0.1:9000",
+        ip:"127.0.0.1:9000",
         sio:null,
         isPinging:false,
         fnDisconnect:null,
